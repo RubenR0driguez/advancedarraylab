@@ -218,6 +218,12 @@ function chickpea(){
 
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
+function cuisinetype()
+
+    let results = dishes.map(function(element){
+     console.log(element);
+     return element.type.cuisine();
+})
 
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
