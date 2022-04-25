@@ -182,12 +182,43 @@ console.log(  "id", servings)
 //4. Create a function that will return only dishes whose serving count is even.
 //Filter
 
-//5. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
+function findevenservingcount(){
+    
+    
+    let results = dishes.filter(function(element){
+        if(element.servings % 2 == 0){
+            return true;
+        }
+        else{
+            return false;
+    }})
+    return results
+    
+}
+    let even = findevenservingcount();
+    console.log(even)
+    //5. Create a function that will return dishes whose ingredients array INCLUDES "chickpea".
 //Hint: You do not want to check the array's indexes to find out what the array INCLUDES.
 //Filter
+function chickpea(){
+  
+  let results = dishes.filter(function(element){
+      if (element.ingredients.includes('chickpea')){
+          return true;
+      }
+      else{
+          return false;
+
+    }})
+    return results;
+
+}
+   let chickpeaDish = chickpea();
+   console.log(chickpeaDish)
 
 //6a. Create a function that will return an array of only the names of the cuisine types. Ie ['Italian', 'Mexican', ...]
 //Map
+
 // BONUS: (come back to this after finishing all)
 //6b. Use the filter method to eliminate duplicates, leaving only distinct values in the array
 
@@ -208,4 +239,4 @@ console.log(  "id", servings)
 //Must use Reduce, not a loop.
 
 //11. Create a function that will return an array of any objects that do not share a cuisine type with any other objects.
-
+//
