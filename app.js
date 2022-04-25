@@ -166,7 +166,7 @@ console.log('Italian foods', Italian)
 function findservingcount(){
 
     let results = dishes.filter(function(element){
-        if(element.servings === "servings"){
+        if(element.servings === element.id ){
             return true;
         }
         else{
@@ -177,7 +177,7 @@ function findservingcount(){
     return results;
 }
 let servings = findservingcount();
-console.log('serving size', servings)
+console.log(  "id", servings)
 
 //4. Create a function that will return only dishes whose serving count is even.
 //Filter
